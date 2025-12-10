@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import githubLogo from 'public/images/github-mark-white.svg';
 const navItems = [
-    { linkText: 'Home', href: '/' },
+    { linkText: 'Dashboard', href: '/' },
     { linkText: 'Earn', href: '/earn' },
     { linkText: 'Tasks', href: '/tasks' },
     { linkText: 'Games', href: '/games' },
