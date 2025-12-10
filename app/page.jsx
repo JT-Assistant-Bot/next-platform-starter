@@ -19,16 +19,24 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section>
-                <ContextAlert className="mb-6" />
-                <h1 className="mb-4">Welcome to SocialEarn</h1>
-                <p className="mb-6 text-lg">
-                    Deploy the latest version of Next.js — including Turbopack, React Compiler, and the new caching APIs
-                    — on Netlify in seconds. No configuration or custom adapter required.
-                </p>
-                <Link href="https://docs.netlify.com/frameworks/next-js/overview/" className="btn btn-lg sm:min-w-64">
-                    Read the Docs
-                </Link>
+           <section>
+  <h1 className="text-4xl font-bold mb-4">Welcome to SocialEarn</h1>
+  <p className="text-lg mb-6">
+    Earn money by completing simple tasks, playing games, inviting friends, and more.
+  </p>
+
+  <ul className="list-disc pl-6 space-y-2 mb-6">
+      <li>Daily login rewards</li>
+      <li>Complete tasks and offers</li>
+      <li>Play games and win coins</li>
+      <li>Invite friends for referral bonuses</li>
+      <li>Withdraw earnings securely</li>
+  </ul>
+
+  <p className="text-gray-300 text-sm">
+      *More earning features will be added as SocialEarn grows.
+  </p>
+</section>
             </section>
             {!!ctx && (
                 <section className="flex flex-col gap-4">
